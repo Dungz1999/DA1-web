@@ -1,0 +1,361 @@
+/* Reset Css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Common dùng chung */
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.mt-8 {
+   margin-top: 8px !important;
+}
+.mt-16{
+    margin-top: 16px;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-full{
+    width: 100%;
+}
+
+.col-half{
+    width: 50%;
+
+}
+.col-thir{
+    width: 33.333333%;
+}
+
+
+
+html{
+    font-family:  Helvetica, Arial, sans-serif;
+}
+.clear{
+    clear: both;
+}
+
+
+
+/* Main */
+#main {
+    
+
+}
+#header {
+    height: 46.4px;
+    background-color: black;
+    position:fixed ;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    right: 0;
+    left: 0px;
+    z-index: 1; /*để cho slider ko đè trên header */
+ }
+ .text-while{
+     color:#ffff !important;
+ }
+#nav {
+    display: inline-block;
+}
+#nav , .subnav{
+    list-style-type: none;
+}
+#nav > li{
+    display: inline-block;
+}
+#nav li {
+    position: relative;
+}
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li a {   
+    text-decoration:none;
+    line-height: 46.4px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    color: #000!important;
+    background-color:#ccc
+}
+#nav .subnav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px;
+    }
+#nav .subnav a{
+    color: black;
+    padding: 0 16px;
+    line-height: 38px;
+}
+#nav .ti-angle-double-down{
+    font-size: 13px;
+}
+#header .search-btn:hover {
+    cursor:pointer;
+    background-color: #f44336
+}
+#header .search-btn {
+    
+    padding:0 18px;    
+}
+#header .search-icon{
+    color: white;
+    font-size: 20px;   
+    line-height: 46.4px;
+    }
+#slider {
+    position: relative;
+    margin-top: 46.4px;
+    padding-top: 50%;
+    background-image: url('/W3_BAND/assets/img/slider/slider2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    
+}
+#slider .text-content{
+    position: absolute;
+    color:#ffff;
+    bottom: 46px;
+    width: 100%;
+    text-align: center;
+}
+#slider  .text-head{
+    font-weight: 600;
+    font-size: 24;
+}
+#slider .text-de{
+    font: 15px;
+    margin-top: 25px;
+}
+
+
+
+#content {
+    
+
+}
+#content .content-selection{
+    width: 800px;
+    padding: 64px 16px;
+    margin: 0 auto;
+}
+#content .content-head{
+    margin-top: 10px;
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-align: center;
+
+}
+#content .content-about{
+    margin-top: 15px;
+    font-size: 15px;
+    font-style:italic;
+    opacity: 0.6;
+    line-height: 1.6;
+    text-align: center;
+
+}
+#content .content-para{
+    margin-top: 15px;
+    font-size: 15px;
+    text-align: center;
+    text-align: justify;
+}
+
+
+#content .member-list{
+    padding-top: 47px;
+    padding-bottom: 64px;
+    overflow: hidden;
+    text-align: center;
+    
+}
+#content .member-item{
+    float: left;
+    width: 33.3333333%;
+    display: inline;  
+    
+}
+#content .member-item .m-name{
+    font-size: 15px;
+    text-align: center;
+    margin: 15px 0;
+}
+#content .mem-image{
+    width: 154px;
+    border-radius:5%;
+    animation: mymove 5s infinite;
+}
+
+/* Phan Tour */
+.tour-selection{
+    background-color: #000;
+    
+}
+.ticket-list {
+    list-style-type: none;
+    background-color: #fff;
+    margin-top: 40px;
+    
+    
+}
+.ticket-list li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ticket-list .sold-out{
+    padding: 2px 8px;
+    margin-left: 16px;
+    background-color: #f44336;
+
+}
+.ticket-list  .Number-ticket{
+    margin-right: 16px;
+    padding: 0 8px;
+    float: right;
+    border-radius: 50%;
+    background-color: #000;
+    color: #ccc;
+    line-height: 22.5px;
+}
+/* phần place */
+.ticket-img{
+    padding-bottom: 48px;
+    padding-top: 32px;
+      
+    
+}
+
+.place-img:hover{
+    opacity: 0.5;
+}
+.place-img{
+    width: 100%;
+    display: block;
+
+}
+.place-item{
+    background-color: #fff;
+    padding: 0.15px 16px;
+}
+.ticket-add{
+    padding: 15px 0px;
+    font-size: 15px;
+
+}
+.ticket-date{
+    color: #75757575;
+
+}
+.palace-about{
+    padding: 15px 0px;
+    
+
+}
+.ticket-buy:hover{
+    background-color: #ccc;
+    color: black;
+    font-weight: 500px;
+    cursor: pointer
+}
+.ticket-buy{
+    color: #fff;
+    background-color: #000;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    border: none;
+    font-weight: 500;
+    font-size: 15px;
+
+
+}
+/* COntact */
+.contact-content{
+    margin-top: 48px;
+    
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.4;
+    
+}
+.contact-info i[class*="ti-"] {  
+    width: 30px;
+    font-size: 18px;  
+}
+.contact-form{
+    font-size: 15px;
+}
+.form-control{
+    padding: 10.6px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.form-sumit-btn{
+    float: right;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    
+}
+.form-sumit-btn:hover{
+    background-color: #ccc;
+    cursor:pointer;
+}
+.maper{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+    color: #000;
+}
+#footer .socials-list{
+    font-size: 24px;
+    
+}
+#footer .socials-list a{
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+
+
+}
+#footer .footer-info a {
+    color: #000;
+}
