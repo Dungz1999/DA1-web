@@ -133,7 +133,7 @@ html{
     position: relative;
     margin-top: 46.4px;
     padding-top: 50%;
-    background-image: url('/assets/img/slider/slider2.jpg');
+    background-image: url('https://www.w3schools.com/w3images/chicago.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
